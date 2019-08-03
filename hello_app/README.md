@@ -29,3 +29,16 @@ First application for this tutorial.
 | Gemfile.lock		   | A list of gems used to ensure that all copies of the app use the same gem versions     |
 | config.ru		       | A configuration file for [Rack middleware](https://rack.github.io/)                    |
 | .gitignore		     | Patterns for files that should be ignored by Git                                       |
+
+## Gemfile
+### Version notation
+
+- `>=` installs latest version greater than specified. Example:
+```
+gem 'uglifier', '>= 1.3.0' # uses version greater than 1.3.0 (even 4.0 and above)
+```
+
+- `~>` installs version greater than specified but only in minor version number position. Example
+```
+gem 'rails', '~> 5.2.3' # uses version greater than 5.2.3 but less than 5.3
+```
